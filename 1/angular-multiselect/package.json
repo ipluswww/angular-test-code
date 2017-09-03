@@ -1,0 +1,48 @@
+{
+  "name": "angular-multiselect",
+  "version": "1.2.0",
+  "description": "A  Native AngularJS multiselect directive",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-angular-filesort": "^1.1.1",
+    "gulp-angular-templatecache": "^1.7.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-lintspaces": "^0.3.1",
+    "gulp-uglify": "^1.4.1",
+    "gulp-watch": "^4.3.5",
+    "merge-stream": "^1.0.0",
+    "run-sequence": "^1.1.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amitava82/angular-multiselect.git"
+  },
+  "keywords": [
+    "angular-multiselect",
+    "multiselect",
+    "angular",
+    "angulajs-multiselect"
+  ],
+  "author": "amitava82 (github.com/amitava82)",
+  "contributors": [
+    {
+      "name": "Nagaraja T",
+      "email": "naga2raja@gmail.com"
+    },
+    {
+      "name": "Zach Lysobey",
+      "email": "zlysobey@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amitava82/angular-multiselect/issues"
+  },
+  "homepage": "https://github.com/amitava82/angular-multiselect#readme"
+}

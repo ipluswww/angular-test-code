@@ -1,0 +1,68 @@
+<html>
+	<head>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular.min.js"></script>
+	<link href="https://bootswatch.com/slate/bootstrap.css" rel="stylesheet" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.0/lodash.js"></script>
+	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
+	<script src="https://rawgit.com/dotansimha/angularjs-dropdown-multiselect/master/src/angularjs-dropdown-multiselect.js"></script>
+
+	</head>
+	<body>
+	<h2>
+		Example of sytled angularjs-dropdown-multiselect  
+	</h2>
+
+	<a href="http://dotansimha.github.io/angularjs-dropdown-multiselect/#/">Source documentation</a>
+
+	<div ng-app="exampleApp" ng-controller="appController">
+
+	  <div ng-dropdown-multiselect="" options="example13data" selected-model="example13model" extra-settings="example13settings"></div>
+
+	</div>
+	<script>
+	var myApp = angular.module('exampleApp', ['angularjs-dropdown-multiselect']);
+
+	myApp.controller('appController', ['$scope',
+	  function($scope) {
+
+		$scope.example13model = [];
+		$scope.example13data = [{
+		  id: 1,
+		  label: "David"
+		}, {
+		  id: 2,
+		  label: "Jhon"
+		}, {
+		  id: 3,
+		  label: "Lisa"
+		}, {
+		  id: 4,
+		  label: "Nicole"
+		}, {
+		  id: 5,
+		  label: "Danny"
+		}];
+
+		$scope.example13settings = {
+		  smartButtonMaxItems: 3,
+		  smartButtonTextConverter: function(itemText, originalItem) {
+			if (itemText === 'Jhon') {
+			  return 'Jhonny!';
+			}
+
+			return itemText;
+		  }
+		};
+	  }
+	]);
+	myApp.run(['$log', function ($log) {
+        $log.log("Start.");
+    }]);
+	</script>
+
+
+	</body>
+</html>
+
+

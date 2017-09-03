@@ -1,0 +1,19 @@
+{
+  "name": "amitava82-angular-multiselect",
+  "version": "1.2.0",
+  "main": "dist/multiselect-tpls.js",
+  "description": "Native AngularJS multiselect directive",
+  "license": "MIT",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {
+    "angular": ">=1.0.4"
+  },
+  "keywords": [
+    "angularjs",
+    "multiselect",
+    "select"
+  ]
+}
